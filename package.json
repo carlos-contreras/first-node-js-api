@@ -1,0 +1,22 @@
+{
+  "name": "first-nodejs-rest-api",
+  "version": "1.0.0",
+  "description": "Hands on nodejs with express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos-contreras/first-node-js-api.git"
+  },
+  "author": "Carlos Contreras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlos-contreras/first-node-js-api/issues"
+  },
+  "homepage": "https://github.com/carlos-contreras/first-node-js-api#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
