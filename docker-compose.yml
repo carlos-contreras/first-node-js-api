@@ -2,10 +2,17 @@ version: '3'
 services:
   web:
     build: '.'
-    command: 'npm run watch-server'
+    command: 'node index.js'
     env_file:
       - './.env'
     volumes:
       - '.:/app'
     ports:
       - '3000:3000'
+  mongo:
+      image: mongo:4.0
+      restart: always
+      ports:
+      - '27017'
+      env_file:
+        - './.env'
