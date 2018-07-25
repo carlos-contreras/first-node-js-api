@@ -1,10 +1,11 @@
 {
   "name": "first-nodejs-rest-api",
   "version": "1.0.0",
-  "description": "Hands on nodejs with express.js",
-  "main": "index.js",
+  "description": "Hands on node.js with express.js",
+  "main": "./src/server.es6",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch 'src/**/*' --exec 'babel-node' ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/carlos-contreras/first-node-js-api#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongoose": "^5.2.5"
   },
